@@ -47,12 +47,11 @@ cmake_ninja_workdir = D$:/projects/programming/Lab_2/MyCode/build/
 #############################################
 # Order-only phony target for Lab_2
 
-build cmake_object_order_depends_target_Lab_2: phony || CMakeFiles/Lab_2.dir
+build cmake_object_order_depends_target_Lab_2: phony || cmake_object_order_depends_target_fun
 
 build CMakeFiles/Lab_2.dir/main.cpp.obj: CXX_COMPILER__Lab_2_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/main.cpp || cmake_object_order_depends_target_Lab_2
   DEP_FILE = CMakeFiles\Lab_2.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++14 -Wall -Wextra -Werror
-  INCLUDES = -ID:/projects/programming/Lab_2/MyCode/build
   OBJECT_DIR = CMakeFiles\Lab_2.dir
   OBJECT_FILE_DIR = CMakeFiles\Lab_2.dir
 
@@ -64,9 +63,9 @@ build CMakeFiles/Lab_2.dir/main.cpp.obj: CXX_COMPILER__Lab_2_unscanned_Debug D$:
 #############################################
 # Link the executable Lab_2.exe
 
-build Lab_2.exe: CXX_EXECUTABLE_LINKER__Lab_2_Debug CMakeFiles/Lab_2.dir/main.cpp.obj
+build Lab_2.exe: CXX_EXECUTABLE_LINKER__Lab_2_Debug CMakeFiles/Lab_2.dir/main.cpp.obj | libfun.a || libfun.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = libfun.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lab_2.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -75,13 +74,45 @@ build Lab_2.exe: CXX_EXECUTABLE_LINKER__Lab_2_Debug CMakeFiles/Lab_2.dir/main.cp
   TARGET_PDB = Lab_2.exe.dbg
 
 # =============================================================================
+# Object build statements for STATIC_LIBRARY target fun
+
+
+#############################################
+# Order-only phony target for fun
+
+build cmake_object_order_depends_target_fun: phony || CMakeFiles/fun.dir
+
+build CMakeFiles/fun.dir/fun.cpp.obj: CXX_COMPILER__fun_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/fun.cpp || cmake_object_order_depends_target_fun
+  DEP_FILE = CMakeFiles\fun.dir\fun.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -Wall -Wextra -Werror
+  INCLUDES = -ID:/projects/programming/Lab_2/MyCode/build
+  OBJECT_DIR = CMakeFiles\fun.dir
+  OBJECT_FILE_DIR = CMakeFiles\fun.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target fun
+
+
+#############################################
+# Link the static library libfun.a
+
+build libfun.a: CXX_STATIC_LIBRARY_LINKER__fun_Debug CMakeFiles/fun.dir/fun.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\fun.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libfun.a
+  TARGET_PDB = fun.a.dbg
+
+# =============================================================================
 # Object build statements for EXECUTABLE target tests
 
 
 #############################################
 # Order-only phony target for tests
 
-build cmake_object_order_depends_target_tests: phony || CMakeFiles/tests.dir
+build cmake_object_order_depends_target_tests: phony || cmake_object_order_depends_target_fun
 
 build CMakeFiles/tests.dir/tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/tests.cpp || cmake_object_order_depends_target_tests
   DEFINES = -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
@@ -98,9 +129,9 @@ build CMakeFiles/tests.dir/tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug D$
 #############################################
 # Link the executable tests.exe
 
-build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests.cpp.obj | C$:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll.a
+build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests.cpp.obj | C$:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll.a libfun.a || libfun.a
   FLAGS = -g
-  LINK_LIBRARIES = C:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = C:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll.a  libfun.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\tests.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -214,6 +245,8 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build Lab_2: phony Lab_2.exe
 
+build fun: phony libfun.a
+
 build tests: phony tests.exe
 
 # =============================================================================
@@ -224,7 +257,7 @@ build tests: phony tests.exe
 #############################################
 # Folder: D:/projects/programming/Lab_2/MyCode/build
 
-build all: phony Lab_2.exe tests.exe
+build all: phony Lab_2.exe libfun.a tests.exe
 
 # =============================================================================
 # Built-in targets

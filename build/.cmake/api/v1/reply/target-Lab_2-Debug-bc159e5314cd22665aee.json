@@ -15,8 +15,8 @@
 		[
 			"add_executable",
 			"install",
+			"target_link_libraries",
 			"target_compile_options",
-			"target_include_directories",
 			"set_target_properties"
 		],
 		"files" : 
@@ -31,31 +31,31 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 7,
+				"line" : 9,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 46,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 38,
+				"line" : 28,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 17,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 13,
+				"line" : 16,
 				"parent" : 0
 			}
 		]
@@ -69,23 +69,16 @@
 					"fragment" : "-g -std=gnu++14"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 4,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 3,
-					"fragment" : "-Werror"
-				}
-			],
-			"includes" : 
-			[
-				{
 					"backtrace" : 4,
-					"path" : "D:/projects/programming/Lab_2/MyCode/build"
+					"fragment" : "-Werror"
 				}
 			],
 			"language" : "CXX",
@@ -101,6 +94,13 @@
 			[
 				0
 			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "fun::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Lab_2::@6890427a1f51a3e7e1df",
@@ -129,6 +129,11 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libfun.a",
+				"role" : "libraries"
 			},
 			{
 				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",

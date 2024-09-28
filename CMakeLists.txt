@@ -4,17 +4,20 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 project(Lab_2 VERSION ${PROJECT_VESRION})
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
+
+
 add_executable(Lab_2 main.cpp )
+add_library(fun fun.cpp)
 add_executable(tests tests.cpp)
 
 set(TSV_FILE "ip_filter.tsv")
 configure_file(${TSV_FILE} ${CMAKE_BINARY_DIR}/ip_filter.tsv COPYONLY)
 
-set_target_properties(Lab_2 PROPERTIES
+set_target_properties(Lab_2 fun PROPERTIES
     CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON
 )
-target_include_directories(Lab_2
+target_include_directories(fun
     PRIVATE "${CMAKE_BINARY_DIR}"
 )
 set_target_properties(tests PROPERTIES
@@ -22,13 +25,19 @@ set_target_properties(tests PROPERTIES
     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
 )
 
-
+target_link_libraries(Lab_2 PRIVATE
+    fun
+)
 target_link_libraries(tests
     ${Boost_LIBRARIES}
+    fun
 )
 
 if (MSVC)
     target_compile_options(Lab_2 PRIVATE
+        /W4
+    )
+    target_compile_options(fun PRIVATE
         /W4
     )
     target_compile_options(tests PRIVATE
@@ -36,6 +45,9 @@ if (MSVC)
     )
 else ()
     target_compile_options(Lab_2 PRIVATE
+        -Wall -Wextra -Werror
+    )
+    target_compile_options(fun PRIVATE
         -Wall -Wextra -Werror
     )
     target_compile_options(tests PRIVATE

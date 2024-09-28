@@ -1,4 +1,5 @@
 D:/projects/programming/Lab_2/MyCode/build/CMakeFiles/Lab_2.dir
+D:/projects/programming/Lab_2/MyCode/build/CMakeFiles/fun.dir
 D:/projects/programming/Lab_2/MyCode/build/CMakeFiles/tests.dir
 D:/projects/programming/Lab_2/MyCode/build/CMakeFiles/package.dir
 D:/projects/programming/Lab_2/MyCode/build/CMakeFiles/package_source.dir

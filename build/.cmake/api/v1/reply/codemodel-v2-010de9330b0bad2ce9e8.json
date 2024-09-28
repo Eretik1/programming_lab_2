@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-f161b4adcac32d7122e1.json",
+					"jsonFile" : "directory-.-Debug-b18241150738899741bf.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5.0"
@@ -17,7 +17,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -33,7 +34,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -42,14 +44,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Lab_2::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Lab_2-Debug-741d447265d239a55c96.json",
+					"jsonFile" : "target-Lab_2-Debug-bc159e5314cd22665aee.json",
 					"name" : "Lab_2",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "fun::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fun-Debug-d6613d634145565b21c1.json",
+					"name" : "fun",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tests-Debug-57f3043172143c55ab70.json",
+					"jsonFile" : "target-tests-Debug-683c273a8ac6bbec97bc.json",
 					"name" : "tests",
 					"projectIndex" : 0
 				}

@@ -30,25 +30,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 26,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 41,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 20,
+				"line" : 23,
 				"parent" : 0
 			}
 		]
@@ -96,6 +96,13 @@
 			]
 		}
 	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "fun::@6890427a1f51a3e7e1df"
+		}
+	],
 	"id" : "tests::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
@@ -112,6 +119,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "C:\\msys64\\mingw64\\lib\\libboost_unit_test_framework-mt.dll.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libfun.a",
 				"role" : "libraries"
 			},
 			{
