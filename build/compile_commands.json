@@ -1,13 +1,13 @@
 [
 {
   "directory": "D:/projects/programming/Lab_2/MyCode/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -ID:/projects/programming/Lab_2/MyCode/build -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles\\Lab_2.dir\\main.cpp.obj -c D:\\projects\\programming\\Lab_2\\MyCode\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -ID:/projects/programming/Lab_2/MyCode/build -g -std=gnu++14 -Wall -Wextra -Werror -o CMakeFiles\\Lab_2.dir\\main.cpp.obj -c D:\\projects\\programming\\Lab_2\\MyCode\\main.cpp",
   "file": "D:\\projects\\programming\\Lab_2\\MyCode\\main.cpp",
   "output": "CMakeFiles\\Lab_2.dir\\main.cpp.obj"
 },
 {
   "directory": "D:/projects/programming/Lab_2/MyCode/build",
-  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB -g -Wall -Wextra -pedantic -Werror -o CMakeFiles\\tests.dir\\tests.cpp.obj -c D:\\projects\\programming\\Lab_2\\MyCode\\tests.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\c++.exe -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB -g -Wall -Wextra -Werror -o CMakeFiles\\tests.dir\\tests.cpp.obj -c D:\\projects\\programming\\Lab_2\\MyCode\\tests.cpp",
   "file": "D:\\projects\\programming\\Lab_2\\MyCode\\tests.cpp",
   "output": "CMakeFiles\\tests.dir\\tests.cpp.obj"
 }

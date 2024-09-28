@@ -36,10 +36,10 @@ if (MSVC)
     )
 else ()
     target_compile_options(Lab_2 PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -Werror
     )
     target_compile_options(tests PRIVATE
-        -Wall -Wextra -pedantic -Werror
+        -Wall -Wextra -Werror
     )
 endif()
 

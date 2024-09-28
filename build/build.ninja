@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Lab_2: phony || CMakeFiles/Lab_2.dir
 
 build CMakeFiles/Lab_2.dir/main.cpp.obj: CXX_COMPILER__Lab_2_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/main.cpp || cmake_object_order_depends_target_Lab_2
   DEP_FILE = CMakeFiles\Lab_2.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -Wall -Wextra -pedantic -Werror
+  FLAGS = -g -std=gnu++14 -Wall -Wextra -Werror
   INCLUDES = -ID:/projects/programming/Lab_2/MyCode/build
   OBJECT_DIR = CMakeFiles\Lab_2.dir
   OBJECT_FILE_DIR = CMakeFiles\Lab_2.dir
@@ -86,7 +86,7 @@ build cmake_object_order_depends_target_tests: phony || CMakeFiles/tests.dir
 build CMakeFiles/tests.dir/tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/tests.cpp || cmake_object_order_depends_target_tests
   DEFINES = -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
   DEP_FILE = CMakeFiles\tests.dir\tests.cpp.obj.d
-  FLAGS = -g -Wall -Wextra -pedantic -Werror
+  FLAGS = -g -Wall -Wextra -Werror
   OBJECT_DIR = CMakeFiles\tests.dir
   OBJECT_FILE_DIR = CMakeFiles\tests.dir
 
