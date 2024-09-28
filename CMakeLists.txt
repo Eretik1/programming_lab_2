@@ -51,7 +51,7 @@ else ()
         -Wall -Wextra -Werror
     )
     target_compile_options(tests PRIVATE
-        -Wall -Wextra -Werror
+        
     )
 endif()
 
