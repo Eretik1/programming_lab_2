@@ -30,46 +30,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "Boost_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Boost."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/msys64/mingw64/lib/cmake/Boost-1.84.0"
-		},
-		{
-			"name" : "Boost_INCLUDE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Path to a file."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/msys64/mingw64/include"
-		},
-		{
-			"name" : "Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : ""
-				}
-			],
-			"type" : "STRING",
-			"value" : "C:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll"
-		},
-		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -1646,18 +1606,6 @@
 			"value" : "1500"
 		},
 		{
-			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Details about finding Boost"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "[C:/msys64/mingw64/lib/cmake/Boost-1.84.0/BoostConfig.cmake][cfound components: unit_test_framework ][v1.84.0()]"
-		},
-		{
 			"name" : "GITCOMMAND",
 			"properties" : 
 			[
@@ -1667,11 +1615,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : ""
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "C:/Program Files/Git/cmd/git.exe"
 		},
 		{
 			"name" : "HGCOMMAND",
@@ -1790,18 +1738,6 @@
 			"value" : ""
 		},
 		{
-			"name" : "PATCH_VERSION",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Patch version"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
-		},
-		{
 			"name" : "SITE",
 			"properties" : 
 			[
@@ -1844,74 +1780,6 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
-		},
-		{
-			"name" : "boost_headers_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for boost_headers."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/msys64/mingw64/lib/cmake/boost_headers-1.84.0"
-		},
-		{
-			"name" : "boost_unit_test_framework_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for boost_unit_test_framework."
-				}
-			],
-			"type" : "PATH",
-			"value" : "C:/msys64/mingw64/lib/cmake/boost_unit_test_framework-1.84.0"
-		},
-		{
-			"name" : "helloworld_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/projects/programming/Lab_2/MyCode/build"
-		},
-		{
-			"name" : "helloworld_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "helloworld_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "D:/projects/programming/Lab_2/MyCode"
 		}
 	],
 	"kind" : "cache",
