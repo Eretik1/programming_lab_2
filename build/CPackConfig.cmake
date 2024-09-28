@@ -10,13 +10,6 @@
 # usually begin with CPACK_<GENNAME>_xxxx.
 
 
-set(CPACK_BINARY_7Z "OFF")
-set(CPACK_BINARY_IFW "OFF")
-set(CPACK_BINARY_INNOSETUP "OFF")
-set(CPACK_BINARY_NSIS "ON")
-set(CPACK_BINARY_NUGET "OFF")
-set(CPACK_BINARY_WIX "OFF")
-set(CPACK_BINARY_ZIP "OFF")
 set(CPACK_BUILD_SOURCE_DIRS "D:/projects/programming/Lab_2/MyCode;D:/projects/programming/Lab_2/MyCode/build")
 set(CPACK_CMAKE_GENERATOR "Ninja")
 set(CPACK_COMPONENT_UNSPECIFIED_HIDDEN "TRUE")
