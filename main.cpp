@@ -16,7 +16,7 @@ bool compare(const std::string& left, const std::string& right) {
     if(l1 > r1){
         return 1;
     }
-    else if((l1 == r1)){
+    else if(l1 == r1){
         if(l2 > r2){
             return 1;
         }
