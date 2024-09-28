@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_Lab_2: phony || CMakeFiles/Lab_2.dir
 
 build CMakeFiles/Lab_2.dir/main.cpp.obj: CXX_COMPILER__Lab_2_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/main.cpp || cmake_object_order_depends_target_Lab_2
   DEP_FILE = CMakeFiles\Lab_2.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14
+  FLAGS = -g -std=gnu++14 -Wall -Wextra -pedantic -Werror
   INCLUDES = -ID:/projects/programming/Lab_2/MyCode/build
   OBJECT_DIR = CMakeFiles\Lab_2.dir
   OBJECT_FILE_DIR = CMakeFiles\Lab_2.dir
@@ -73,6 +73,40 @@ build Lab_2.exe: CXX_EXECUTABLE_LINKER__Lab_2_Debug CMakeFiles/Lab_2.dir/main.cp
   TARGET_FILE = Lab_2.exe
   TARGET_IMPLIB = libLab_2.dll.a
   TARGET_PDB = Lab_2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tests
+
+
+#############################################
+# Order-only phony target for tests
+
+build cmake_object_order_depends_target_tests: phony || CMakeFiles/tests.dir
+
+build CMakeFiles/tests.dir/tests.cpp.obj: CXX_COMPILER__tests_unscanned_Debug D$:/projects/programming/Lab_2/MyCode/tests.cpp || cmake_object_order_depends_target_tests
+  DEFINES = -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB
+  DEP_FILE = CMakeFiles\tests.dir\tests.cpp.obj.d
+  FLAGS = -g -Wall -Wextra -pedantic -Werror
+  OBJECT_DIR = CMakeFiles\tests.dir
+  OBJECT_FILE_DIR = CMakeFiles\tests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tests
+
+
+#############################################
+# Link the executable tests.exe
+
+build tests.exe: CXX_EXECUTABLE_LINKER__tests_Debug CMakeFiles/tests.dir/tests.cpp.obj | C$:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll.a
+  FLAGS = -g
+  LINK_LIBRARIES = C:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests.exe
+  TARGET_IMPLIB = libtests.dll.a
+  TARGET_PDB = tests.exe.dbg
 
 
 #############################################
@@ -180,6 +214,8 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 build Lab_2: phony Lab_2.exe
 
+build tests: phony tests.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -188,7 +224,7 @@ build Lab_2: phony Lab_2.exe
 #############################################
 # Folder: D:/projects/programming/Lab_2/MyCode/build
 
-build all: phony Lab_2.exe
+build all: phony Lab_2.exe tests.exe
 
 # =============================================================================
 # Built-in targets
