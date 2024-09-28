@@ -60,13 +60,13 @@ int main(int, char**){
         || stoi(p.substr(p.find(".", p.find(".", p.find(".") + 1) + 1) + 1, p.find(".", p.find(".", p.find(".", p.find(".") + 1) + 1)))) == 46
         )std::cout << p << std::endl;}};
     std::vector<std::string> ip = readfile();
-    for(int i = 0; i < ip.size(); i++){
+    for(int i = 0; i < int(ip.size()); i++){
         print1(ip[i]);
     }
-    for(int i = 0; i < ip.size(); i++){
+    for(int i = 0; i < int(ip.size()); i++){
         print2(ip[i]);
     }
-    for(int i = 0; i < ip.size(); i++){
+    for(int i = 0; i < int(ip.size()); i++){
         print3(ip[i]);
     }
     return 0;
