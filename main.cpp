@@ -35,8 +35,8 @@ bool compare(const std::string& left, const std::string& right) {
 std::vector<std::string> readfile(){
     std::string line;
     std::vector<std::string> ip;
-    std::ifstream in("D://projects//programming//Lab_2//MyCode//ip_filter.tsv"); 
-    while (std::getline(in, line)) {
+    std::ifstream file("ip_filter.tsv"); 
+    while (std::getline(file, line)) {
         ip.push_back(line.substr(0, line.find("	")));
     }
     std::sort(begin(ip), end(ip), compare);
@@ -45,7 +45,7 @@ std::vector<std::string> readfile(){
         std::cout << ip[i] << std::endl;
     }
     //*/
-    in.close();
+    file.close();
     return ip;
 }
 

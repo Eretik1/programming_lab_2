@@ -17,6 +17,14 @@
 //Build the testing tree.
 BUILD_TESTING:BOOL=ON
 
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=C:/msys64/mingw64/lib/cmake/Boost-1.84.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=C:/msys64/mingw64/include
+
+Boost_UNIT_TEST_FRAMEWORK_LIBRARY_RELEASE:STRING=C:/msys64/mingw64/lib/libboost_unit_test_framework-mt.dll
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/msys64/mingw64/bin/addr2line.exe
 
@@ -299,6 +307,9 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a file.
+FILE:FILEPATH=FILE-NOTFOUND
+
 //Path to a program.
 GITCOMMAND:FILEPATH=C:/Program Files/Git/cmd/git.exe
 
@@ -323,11 +334,22 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 //Name of the computer/site where compile is being run
 SITE:STRING=DESKTOP-PF6BU33
 
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=C:/msys64/mingw64/lib/cmake/boost_headers-1.84.0
+
+//The directory containing a CMake configuration file for boost_unit_test_framework.
+boost_unit_test_framework_DIR:PATH=C:/msys64/mingw64/lib/cmake/boost_unit_test_framework-1.84.0
+
+//Path to a file.
+file:FILEPATH=file-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -344,8 +366,6 @@ CMAKE_CACHE_PATCH_VERSION:INTERNAL=1
 CMAKE_COMMAND:INTERNAL=C:/msys64/mingw64/bin/cmake.exe
 //Path to cpack program executable.
 CMAKE_CPACK_COMMAND:INTERNAL=C:/msys64/mingw64/bin/cpack.exe
-//ADVANCED property for variable: CMAKE_CTEST_COMMAND
-CMAKE_CTEST_COMMAND-ADVANCED:INTERNAL=1
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/msys64/mingw64/bin/ctest.exe
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
@@ -512,6 +532,8 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[C:/msys64/mingw64/lib/cmake/Boost-1.84.0/BoostConfig.cmake][cfound components: unit_test_framework ][v1.84.0()]
 //ADVANCED property for variable: GITCOMMAND
 GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
@@ -524,4 +546,8 @@ MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 SITE-ADVANCED:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_unit_test_framework_DIR
+boost_unit_test_framework_DIR-ADVANCED:INTERNAL=1
 
