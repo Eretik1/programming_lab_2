@@ -35,4 +35,4 @@ include(CPack)
 enable_testing()
 
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+
